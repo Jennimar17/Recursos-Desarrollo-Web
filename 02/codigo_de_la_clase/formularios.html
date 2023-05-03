@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+
+<body>
+    <h1>Tienes algo para decir?</h1>
+    <p>A través de este formulario puedes enviarme un mensaje para ayudarme a corregir errores, a mejorar mi blog, o
+        simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un
+        mensaje. Estaré feliz de contestarte!</p>
+
+    <form action="../../form-result.php" method="post" enctype="text/plain">
+
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <p>Nombre</p>
+        <input type="text" name="nombre">
+        <p>Correo</p>
+        <input type="email" name="correo">
+        <p>Contraseña</p>
+        <input type="password" name="edad">
+        <p>Tu mensaje</p>
+        <textarea name="mensaje"></textarea>
+        <p>¿Qué temas te gustaría que trate más en mi sitio?
+            <br>
+            <label><input type="checkbox" name="html"> HTML</label>
+            <label><input type="checkbox" name="graficos"> Gráficos</label>
+            <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+            <label><input type="checkbox" name="arte"> Arte</label>
+            <label><input type="checkbox" name="musica"> Música</label>
+        </p>
+        <p>¿Qué tipo de turno prefieres?
+            <br>
+            <input type="radio" name="turno" value="diurno"> Turno diurno
+            <input type="radio" name="turno" value="nocturno"> Turno nocturno
+        </p>
+        <legend>Seleccione su talla</legend>
+        <select name="talles">
+            <option value="L">Large</option>
+            <option value="M">Medium</option>
+            <option value="S">Small</option>
+        </select>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>      
+        <fieldset>
+            <p>
+                <input type="submit" value="Enviar mensaje">
+                <input type="reset" value="Comenzar de nuevo">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
