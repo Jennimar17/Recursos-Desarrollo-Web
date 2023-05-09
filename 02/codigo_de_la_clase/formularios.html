@@ -17,17 +17,34 @@
     <form action="../../form-result.php" method="post" enctype="text/plain">
 
         <h2>FORMULARIO DE CONTACTO</h2>
+
         <p>Nombre</p>
-        <input type="text" name="nombre">
+        
+        <fieldset>
+            <input type="text" name="nombre">
+        </fieldset>
+
+        <p>Apellido</p>
+
+        <input type="text" name="apellido" placeholder="texto que esta por defecto">
+
         <p>Correo</p>
-        <input type="email" name="correo">
-        <p>Contraseña</p>
-        <input type="password" name="edad">
+
+        <input type="email" name="correo" placeholder="Escriba su mail">
+
+        <label>Contraseña: </label>
+
+        <input type="password" name="password" placeholder="Escriba su password">
+
         <p>Tu mensaje</p>
-        <textarea name="mensaje"></textarea>
+
+        <textarea></textarea>
+
         <p>¿Qué temas te gustaría que trate más en mi sitio?
             <br>
-            <label><input type="checkbox" name="html"> HTML</label>
+            <label>
+                <input type="checkbox" name="html"> HTML
+            </label>
             <label><input type="checkbox" name="graficos"> Gráficos</label>
             <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
             <label><input type="checkbox" name="arte"> Arte</label>
@@ -38,23 +55,25 @@
             <input type="radio" name="turno" value="diurno"> Turno diurno
             <input type="radio" name="turno" value="nocturno"> Turno nocturno
         </p>
-        <legend>Seleccione su talla</legend>
+
+        <legend>Seleccione su talla:</legend>
+
         <select name="talles">
             <option value="L">Large</option>
             <option value="M">Medium</option>
             <option value="S">Small</option>
         </select>
         <br>
-        <br> 
         <br>
         <br>
-        <br>      
-        <fieldset>
-            <p>
-                <input type="submit" value="Enviar mensaje">
-                <input type="reset" value="Comenzar de nuevo">
-            </p>
-        </fieldset>
+        <br>
+        <br>
+
+        <p>
+            <input type="submit" value="Enviar mensaje">
+            <input type="reset" value="Comenzar de nuevo">
+        </p>
+
     </form>
 </body>
 
