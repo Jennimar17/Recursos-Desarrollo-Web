@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "MyFuente";
+  src: url(./fonts/Foldit.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap");
+* {
+  /* selector universal */
+}
+
+h1 {
+  /* selector de etiqueta */
+}
+
+#titulo {
+  /* selector de id */
+}
+
+.subtituloPrimero {
+  /* selector de clase */
+}
+
+.subtituloPrimero,
+.subtituloSegundo {
+  /* selectores agrupados */
+  color: brown;
+}
+
+.parrafo {
+  color: blue;
+}
+
+div .parrafo {
+  color: red;
+}
+
+#parrafoUno {
+  font-family: "MyFuente";
+}
+
+#parrafoDos {
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.caja {
+  width: 350px;
+  height: 350px;
+  background-color: aqua;
+  position: fixed;
+  
+}
+
+.caja2 {
+  width: 350px;
+  height: 350px;
+
+  background-color: brown;
+  z-index: 1 ;
+}
