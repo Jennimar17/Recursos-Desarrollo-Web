@@ -1,0 +1,33 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    grid-template-columns: 20% auto 15%;
+ }
+ .border {
+    border: 1px solid black;
+ }
+
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;     
+ }
+ section#servicios {
+    grid-area: servicios;     
+ }
+ nav {
+    grid-area: nav;
+ }
+ aside {
+    grid-area: publicidad;
+ }
+ 

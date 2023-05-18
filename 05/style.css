@@ -13,9 +13,8 @@
   text-align: center;
   color: #000;
   background-color: #eaff6a;
-  order: -1;
 }
 
-.item-1 {
-  order: -1;
+.item {
+  order: 5;
 }
