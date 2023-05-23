@@ -1,0 +1,64 @@
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 1fr 60px;
+  grid-template-columns: 20% auto 15%;
+}
+.border {
+  border: 1px solid black;
+  background-color: lightgreen;
+}
+
+header {
+  grid-area: header;
+}
+footer {
+  grid-area: footer;
+}
+section#productos {
+  grid-area: productos;
+}
+section#servicios {
+  grid-area: servicios;
+}
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: publicidad;
+}
+
+@media screen and (min-width: 768px) {
+  #grilla {
+    grid-template-rows: 100px 1fr 1fr 1fr 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "productos productos productos publicidad"
+      "servicios servicios servicios publicidad"
+      "footer footer footer footer";
+  }
+  .border {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #grilla {
+    grid-template-rows: 130px 5fr 3fr 80px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      "nav productos productos productos publicidad"
+      "nav servicios servicios servicios publicidad"
+      "footer footer footer footer footer";
+  }
+  .border {
+    background-color: pink;
+  }
+}
