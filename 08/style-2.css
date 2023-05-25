@@ -1,0 +1,59 @@
+/*Estilos base para los divs*/
+
+div {
+  border: solid grey 1px;
+  padding: 10px;
+}
+
+/*Estilos base para los enlaces*/
+
+a {
+  /*Todos los elementos <a>*/
+
+  display: inline-block;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: azure;
+  color: rgb(10, 10, 60);
+}
+
+a:link {
+  /*Todos los elementos <a> que tengan un atributo href definido y no hayan sido visitados*/
+  background-color: aqua;
+  color: darkslateblue;
+}
+
+a:hover {
+  /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgb(10, 10, 60);
+  color: azure;
+}
+
+a:active {
+  /*Todos los elementos <a> cuando se está haciendo click sobre ellos*/
+  background-color: yellow;
+  color: black;
+}
+
+a:visited {
+  /*Todos los elementos <a> que tengan un atributo href definido y ya hayan sido visitados*/
+  background-color: darkslategrey;
+  color: #999;
+}
+
+article p::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.after-text::after {
+  content: " <- AFTER!";
+  color: green;
+}
+
+.before-text::before {
+  content: " <- BEFORE";
+  color: red;
+}
