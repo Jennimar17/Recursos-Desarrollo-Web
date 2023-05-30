@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.paddingTB {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footerBg {
+	background-color: green;
+}
+
+.footerBg h3 {
+	color: yellow;
+	text-align: center;
+}
+
+.col-lg-12,
+.col-lg-6 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.paddingT {
+	padding-top: 50px;
+}
+
+.centrar {
+	text-align: center;
+}
+
+.paddingLR {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.ico_foo:hover {
+	cursor: pointer;
+}
+
+
+.redesSociales:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+	.navbar-expand-lg .navbar-collapse {
+		justify-content: flex-end;
+	}
+
+	.footerFlex {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+	.footerFlex {
+		display: flex;
+		flex-direction: column;
+	}
+}
