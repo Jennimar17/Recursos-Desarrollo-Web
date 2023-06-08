@@ -1,0 +1,57 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 15px;
+}
+div p {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  padding: 15px;
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+
+li {
+  color: blue;
+}
+li:hover {
+  color: red;
+}
+
+/* Variables */
+/* SCSS*/
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif; /* Uso la variable*/
+  color: #f44336;
+}
+
+div.container {
+  color: #f44336;
+  background: #fff;
+  width: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box_uno {
+  background-color: #4285f4;
+  width: 360px; /* Ancho de 360*/
+}
+
+.box_dos {
+  background-color: #33d374;
+  width: 310px;
+}
+
+/*# sourceMappingURL=style.css.map */

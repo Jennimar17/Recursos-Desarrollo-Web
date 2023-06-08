@@ -1,0 +1,72 @@
+@import "variables";
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 15px;
+  p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+}
+
+//nesting o anidacion
+
+ul {
+  list-style: none;
+  li {
+    padding: 15px;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #444;
+    }
+  }
+}
+
+//& para anidar
+
+li {
+  color: blue;
+  &:hover {
+    color: $cool-yellow;
+  }
+}
+
+/* Variables */
+$title-font: normal 24px/1.5 "Open Sans", sans-serif;
+$cool-red: #f44336;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+/* SCSS*/
+
+
+
+h1.title {
+  font: $title-font; /* Uso la variable*/
+  color: $cool-red;
+}
+
+div.container {
+  color: $cool-red;
+  background: #fff;
+  width: 50%;
+  box-shadow: $box-shadow-bottom-only;
+}
+
+//operaciones
+
+$ancho: 720px;
+$blue: #4285f4;
+$green: #33d374;
+
+.box_uno {
+  background-color: $blue;
+  width: $ancho/2; /* Ancho de 360*/
+}
+.box_dos {
+  background-color: $green;
+  width: ($ancho/2)-50;
+}
