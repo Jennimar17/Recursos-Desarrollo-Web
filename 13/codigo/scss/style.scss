@@ -1,0 +1,21 @@
+//condicionales
+
+$vista:mobile;
+$h1Desktop: 3rem;
+$h1Mobile: 1.2rem;
+
+body{
+@if $vista == desktop {
+	@media only screen and (min-width:1024px){
+		h1{font-size:$h1Desktop;}
+		}
+	} @else if $vista == mobile {
+		@media only screen and (max-width:767px){
+			h1{font-size:$h1Mobile;
+                   font-family: 'Courier New', Courier, monospace;
+                    }
+		}
+	} @else {
+		h1{font-size:1rem;}
+	}
+}

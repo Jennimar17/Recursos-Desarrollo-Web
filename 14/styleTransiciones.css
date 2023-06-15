@@ -1,0 +1,48 @@
+/* div {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  transition: height 2s;
+}
+div:hover {
+  height: 200px;
+} */
+
+div {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  transition: height 2s, width 1s;
+}
+div:hover {
+  height: 200px;
+  width: 200px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.9);
+  border: solid 1px;
+}
+div:hover {
+  padding: 20px;
+  transform: skewY(25deg);
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 767px) {
+  body h1 {
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+#grad {
+  background-image: linear-gradient(red, yellow);
+}
+
+#grad_2 {
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+#grad_3 {
+  background-image: linear-gradient(to bottom, red, yellow);
+}
+
+#grad_4 {
+  background-image: linear-gradient(to bottom, red, yellow);
+}
+
+#grad_5 {
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+#grad_6 {
+  background-image: linear-gradient(to top, red, yellow);
+}
+
+#grad_7 {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(circle, red, gold);
+}
+
+#grad_8 {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(
+    ellipse 250px 100px,
+    lightgreen,
+    darkslateblue
+  );
+}
